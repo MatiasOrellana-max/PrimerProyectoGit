@@ -1,12 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initialscale=1.0">
- <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="./Assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/CSS/estilo.css">
 </head>
 <body>
+    <!--Encabezado-->
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Mi Portafolio</h1>
+        <p>Bienvenido a mi portafolio</p>
+    </header>
+ <!--Fin Encabezado-->
+  <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ <!--Fin Navbar-->
 
+ <!--Sección Presentación-->
+    <section id="about" class="container py-5">
+        <h2 class="text-center">Matias Orellana</h2>
+        <p class="text-center">Soy un estudiante de desarrollo web que a traves de este Bootcamp ha aprendido las habilidades mencionadas más abajo    </p>
+    </section>
+<!--Fin Sección Presentación-->
+
+<!--Sección Habilidades-->
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Habilidades Aprendidas</h2>
+            <ul class="list-group">
+                <li class="list-group-item">HTML</li>
+                <li class="list-group-item">CSS</li>
+                <li class="list-group-item">JavaScript</li>
+                <li class="list-group-item">Bootstrap</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Fin Sección Habilidades-->
+
+     <!-- Card Proyectos -->
+    <section id="projects" class="container py-5">
+        <h2 class="text-center">Proyectos</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./Assets/IMG/jahlove2.png" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">JAH LOVE</h5>
+                        <p class="card-text">Captura de pantalla de la primera pagina con Bootstrap </p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+ <!-- Fin Card Proyectos -->
+  <!--Formulario de llenado-->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Contacto</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div><br>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+<!-- Fin Formulario de llenado-->
+
+    <script src="./Assets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="./Assets/JS/logica.js"></script>
 </body>
 </html>
